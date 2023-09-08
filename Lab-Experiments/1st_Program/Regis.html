@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            background: linear-gradient(200deg ,purple,red);
+            animation: bdy 5s ease infinite;
+            text-align: center;
+            align-items: center;
+        }
+        @keyframes bdy {
+            0%
+            {
+                background-position: 0% 50%;
+            }
+            50%
+            {
+                background-position: 50% 80%;
+            }
+        }
+        .Login_img
+        {
+            display: inline-block;
+            width: 50%;
+            
+            position: relative;
+        }
+        .Login_img img{
+            width: 500px;
+            height: 600px;
+        }
+        .Login_
+        {   margin: 30px;
+            position: relative;
+            display: flex;
+          
+        }
+        .Login_div{
+            display: inline-block;
+            width: 50%;
+            position: relative;
+            margin-left: -70px;
+            padding: 10px;
+            padding-top: 80px;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+
+        .Login_div:hover
+        {
+            background: linear-gradient(300deg,purple,red);
+            animation: inde 4s ease infinite;
+        }
+        @keyframes inde {
+            0%
+            {
+                background-position: 25% 50%;
+            }
+            100%
+            {
+                background-position: 50% 75%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="Login_">
+        <div class="Login_img">
+            <img src="https://images.pexels.com/photos/3952076/pexels-photo-3952076.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        </div>
+        <div class="Login_div">
+
+        <form action="">
+            <label for="">Name: <input type="text"></label>
+            <br><br>
+            <label for="">Email: <input type="email"></label>
+            <br><br>
+            <label for="">DOB: <input type="date"></label>
+            <br><br>
+            <label for="">Password:<input type="password" name="" id=""></label>
+            <br><br>
+            <label for="">Confirm Password: <input type="password"></label>
+            <br><br>
+            <input type="checkbox"name="check">
+            <label for="check">I agree the Terms&condition</label>
+            <br><br>
+            <input type="submit">
+            <br><br>
+            <input type="reset">
+             <br><br>
+             <a href="./login.html"><input type="button" value="Login"></a>
+        </form>
+    </div>
+    </div>
+    <hr>
+    <a href="./Home.html">Click Here to Go Main Page</a>
+</body>
+</html>

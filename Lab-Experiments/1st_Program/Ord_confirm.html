@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        body{
+            
+            text-align: center;
+            align-items: center;
+        }
+        img
+        {
+            position: relative;
+            align-items: center;
+            opacity: 0.76;
+        }
+        .cont
+        {   margin-top: -30px;
+            box-shadow: 2px 2px 2px white;
+            position: relative;
+            bottom: 500px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            font-size: 16px; 
+        }
+
+        .cont label 
+        {
+            background-color: black;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function call() {
+            alert("Order Placed  Sucessfully");
+        }
+    </script>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1623027811561-196ea6f37682?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJvb2tzdG9yZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+     <div class="cont">
+        <h3>Order Details</h3>
+        <label for="12">Select Order mode</label>
+         <select name="Sele" id="12">
+          <option value="">UPI</option>
+          <option value="">Google pay,Phone pay,paytm</option>
+          <option value="">Cash On Delivery</option>
+         </select>
+          <br><br>
+        <form action="">
+            <label for="">Enter card no: <input type="text" placeholder="xxxxxx"></label>
+            <br><br>
+            <label for="">Confirm your address : <input type="text" name="" id=""></label>
+            <br><br>
+            <label for="name">Select number of Items</label>
+            <input type="radio" name="name" id="name" style="background-color: black;">1
+            <input type="radio" name="name" id="name"style="background-color: black;">2
+            <input type="radio" name="name" id="name"style="background-color: black;">3
+            <input type="radio" name="name" id="name"style="background-color: black;">4
+            <input type="radio" name="name" id="name"style="background-color: black;">5
+
+            <br><br>
+            <label for="">Mobile no : <input type="text" placeholder="12345"></label>
+            <br><br>
+            <label for="">Enter otp : <input type="number" name="" id="" placeholder="......"></label>
+            <br><br>
+
+            <a href="./Home.html"><input type="button" name="" id="" value="place Order" onclick="call()"></a>
+        </form>
+     </div>
+    <a href="./Home.html">Click Here 👇for Redirecting Home</a>
+</body>
+</html>
