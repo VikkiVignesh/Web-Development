@@ -1,9 +1,7 @@
 *
-{
-   padding: 0;
-   margin: 0;
+{padding: 0;
+ margin: 0;
 }
-
 body
 {
    width: 100%;
@@ -13,38 +11,22 @@ body
    backface-visibility: visible;
    background-color: #f9f9f9;
    backdrop-filter: opacity(0.5);
-   background: linear-gradient(125deg,rgb(253, 191, 74),rgb(0, 251, 255),rgb(251, 93, 251));
+   background: linear-gradient(125deg,rgb(253, 191, 74,.8),rgb(0, 251, 255,.8),rgb(251, 93, 251,.8)),url("./pics/workshop.jpeg");
    display: grid;
    place-content: center;
-   animation: bodyanim 2s linear infinite;
+   animation: bodyanim 10s linear infinite;
 }
 @keyframes bodyanim
-{
-   0%
-   {
-      background-position: 0% 50%
-   }
-   20%
-   {
-      background-position: 50% 100%;
-   }
-   40%
-   {
-      background-position: 100% 250%;
-   }
-   60%{
-      background-position: 250% 200%;
-   }
-   800%
-   {
-      background-position: 200% 150%;
-   }
+{  0%
+   {background-position: 0% 50%}
+   20%{  background-position: 50% 100%;}
+   40% {background-position: 100% 250%; }
+   60%{background-position: 250% 200%;}
+   80%
+   { background-position: 200% 150%;}
    100%
-   {
-      background-position: 150% 10%;
-   }
+   {background-position: 150% 10%;}
 }
-
 .container
 { width: 70%;
    height: auto;
@@ -55,36 +37,17 @@ body
    text-align: center;
    animation: borderanim 4s linear infinite ;
    border: 1px solid black;
+   margin-left: 20px;
 }
-
 @keyframes borderanim
 {
-   0%
-   {
-      box-shadow: 4px 5px 45px rgb(84, 82, 82,.5);
-   }
-   20%
-   {
-      box-shadow: 4px 5px 45px rgba(255, 254, 254, 0.5);
-   }
-   40%
-   {
-      box-shadow: 4px 5px 45px rgba(255, 255, 255, 0.5);
-   }
-   60%
-   {
-      box-shadow: 4px 5px 45px rgba(0, 0, 0, 0.5);
-   }
-   80%
-   {
-      box-shadow: 4px 5px 45px rgb(84, 82, 82,.5);
-   }
-   100%
-   {
-      box-shadow: 4px 5px 45px rgba(255, 255, 255, 0.5);
-   }
+   0%{box-shadow: 4px 5px 45px rgb(84, 82, 82,.5);}
+   20%{box-shadow: 4px 5px 45px rgba(9, 8, 8, 0.5);}
+   40%{box-shadow: 4px 5px 45px rgba(0, 0, 0, 0.5);}
+   60%{box-shadow: 4px 5px 45px rgba(0, 0, 0, 0.5);}
+   80%{box-shadow: 4px 5px 45px rgb(84, 82, 82,.5);}
+   100%{box-shadow: 4px 5px 45px rgba(5, 5, 5, 0.5);}
 }
-
 #head-text
 {
    font-family: cursive;
@@ -94,24 +57,23 @@ body
    position: relative;
 }
 
+#head-text:hover
+{
+   text-shadow: 2px 2p 2px white;
+}
 #image-select
 {
   display: none; 
 }
-
 button,label
-{
-   margin: 20px;
+{ margin: 20px;
   padding: 10px 20px;
   background: rgb(68, 236, 255);
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: .3s linear;
-
 }
-
-
 button
 {
    border: none;
@@ -144,17 +106,11 @@ display: none;
 @keyframes imganim
 {
    0%
-   {
-      box-shadow: 2px 4px 5px bisque;
-   }
+   { box-shadow: 2px 4px 5px bisque;}
    50%
-   {
-      box-shadow: 2px 4px 5px rgb(244, 176, 93);
-   }
+   {box-shadow: 2px 4px 5px rgb(244, 176, 93);}
    100%
-   {
-      box-shadow: 2px 4px 5px rgb(253, 194, 122)6, 215, 255;
-   }
+   {box-shadow: 2px 4px 5px rgb(253, 194, 122)6, 215, 255;}
 }
 
 #res-div
