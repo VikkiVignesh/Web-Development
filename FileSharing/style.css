@@ -1,58 +1,83 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.File-store
+*
 {
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  text-align: center;
 }
-.File-store nav{
-  position: fixed;
-  box-sizing: border-box;
+.file-store
+{
+  display: block;
+  align-content: center;
 }
-.nav-img{
-    width: 100px;
-    height: 50px;
+
+.nav-img
+{
+  width:200px;
+  height:100px;
+  margin-left: -1240px;
 }
+.nav-img:hover
+{
+  box-shadow: 4px 5px 2px rgb(66, 63, 63);
+  cursor: pointer;
+}
+
 .container
 {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin-top: 200px;
   justify-content: center;
-  position: relative;
-}
-.File-store .container .file-share
-{
- width: 50%;
- border: 3px dashed blue;
- align-items: flex-start;
- box-sizing: border-box;
- align-content: center;
- border-radius: 6px;
- padding: 30px;
-}
- .file-img{
-    width: 300px;
-    height: 300px;
-    align-items: flex-start;
-    
- }
-.res{
-  width: 500px;
-  height: 500px;
-  align-items: flex-end;
-  text-align: center;
-  align-content: center;
-}
-#banner-img
-{
-   width: 200px;
-   height: 200px;
 }
 
-.File-store .container .input-item
-{
-    display: none;
+.file-share
+{ padding: 20px;
+  width: 500px;
+  height: 300px;
+  align-items: flex-start;
+  margin-left: -400px;
+  flex: 2 0 1;
+  border: 2px dashed rgb(39, 39, 255);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
+
+.file-img
+{
+  width: 200px;
+  height:200px;
+  margin-top: 30px;
+}
+
+.res
+{
+  width: 50%;
+  align-items: flex-end;
+  margin-right: -300px;
+  margin-top: -200px;
+}
+
+#banner-img
+{
+  width: 800px;
+  height: 600px;
+}
+
+.share-btn
+{
+  background-color: greenyellow;
+}
+
+
+
+button
+{
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
